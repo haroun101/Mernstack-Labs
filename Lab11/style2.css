@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(13, 13, 49);
+}
+.main{
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color:rgb(19, 19, 108);
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+}
+.btn{
+    width: 527px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(19, 19, 135);
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}

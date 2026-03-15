@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh; /* مهم للـ scroll */
+  background-image:
+    linear-gradient(to right, #01022de5 30%, #01022d7b),
+    url(9d91365d2c9608fe751e67b42ddc9898.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============ NAVBAR (لم يتم تعديلها) ============ */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #1781d3;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #1781d3;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgb(1, 28, 52);
+}
+
+/* ============ HERO SECTION ============ */
+
+.hero {
+  min-height: 100vh; /* بدل flex:1 */
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* زرار الإطلاق */
+
+.hero-text button {
+  width: fit-content;
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #01022de5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.hero-text button:hover {
+  background: #9292a0e5;
+  transform: translateY(-3px);
+}
+
+/* ============ SECTIONS تحت الهيرو ============ */
+
+.section {
+  padding: 100px 60px;
+  background: #02052a;
+  color: white;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1781d3;
+}
+
+.section p {
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 900px) {
+  .hero-text h2 {
+    font-size: 2.3rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .section {
+    padding: 60px 25px;
+  }
+}
+/* ============ CONTACT SECTION ============ */
+
+.contact-section {
+  min-height: 100vh;
+  padding: 100px 80px;
+  background: black;
+  color: white;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+  color: white;
+}
+
+/* الفورم */
+
+.contact-form {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* كل صف فيه inputين */
+
+.form-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+/* شكل الانبوت */
+
+.form-row input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 10px 5px;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-row input::placeholder {
+  color: #777;
+}
+
+.form-row input:focus {
+  border-bottom-color: #1781d3;
+}
+
+/* زرار الإرسال */
+
+.submit-btn {
+  margin-top: 40px;
+  padding: 12px 40px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.submit-btn:hover {
+  background: #1781d3;
+  border-color: #1781d3;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-section {
+    padding: 80px 25px;
+  }
+}
