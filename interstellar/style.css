@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  min-height: 100vh; /* مهم للـ scroll */
+  min-height: 100vh; 
   background-image:
     linear-gradient(to right, #01022de5 30%, #01022d7b),
     url(9d91365d2c9608fe751e67b42ddc9898.jpg);
@@ -24,7 +24,6 @@ body {
   flex-direction: column;
 }
 
-/* ============ NAVBAR (لم يتم تعديلها) ============ */
 
 .nav {
   display: flex;
@@ -56,10 +55,9 @@ body {
   background: rgb(1, 28, 52);
 }
 
-/* ============ HERO SECTION ============ */
 
 .hero {
-  min-height: 100vh; /* بدل flex:1 */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 40px;
@@ -82,8 +80,6 @@ body {
   font-size: 1rem;
 }
 
-/* زرار الإطلاق */
-
 .hero-text button {
   width: fit-content;
   padding: 12px 25px;
@@ -100,8 +96,6 @@ body {
   background: #9292a0e5;
   transform: translateY(-3px);
 }
-
-/* ============ SECTIONS تحت الهيرو ============ */
 
 .section {
   padding: 100px 60px;
@@ -120,7 +114,6 @@ body {
   line-height: 1.7;
 }
 
-/* ============ RESPONSIVE ============ */
 
 @media (max-width: 900px) {
   .hero-text h2 {
@@ -146,7 +139,6 @@ body {
     padding: 60px 25px;
   }
 }
-/* ============ CONTACT SECTION ============ */
 
 .contact-section {
   min-height: 100vh;
@@ -160,23 +152,15 @@ body {
   margin-bottom: 80px;
   color: white;
 }
-
-/* الفورم */
-
 .contact-form {
   max-width: 1000px;
   margin: auto;
-}
-
-/* كل صف فيه inputين */
 
 .form-row {
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
-}
 
-/* شكل الانبوت */
 
 .form-row input {
   flex: 1;
@@ -198,7 +182,6 @@ body {
   border-bottom-color: #1781d3;
 }
 
-/* زرار الإرسال */
 
 .submit-btn {
   margin-top: 40px;
@@ -214,8 +197,6 @@ body {
   background: #1781d3;
   border-color: #1781d3;
 }
-
-/* ============ RESPONSIVE ============ */
 
 @media (max-width: 700px) {
   .form-row {
