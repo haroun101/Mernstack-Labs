@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^13.3.2",
+    "validator": "^13.15.26"
+    
+  }
+}
